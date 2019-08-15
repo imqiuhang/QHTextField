@@ -24,7 +24,7 @@ NSString *QHTextFieldFloatRegExCreat(NSInteger integerLength, NSInteger decimalL
     integerLength = MIN(maxLength, MAX(0, integerLength));
     decimalLength = MIN(maxLength, MAX(0, decimalLength));
     
-    return  [NSString stringWithFormat:@"^\\d{0,%ld}$|^(\\d{0,%ld}[.][0-9]{0,%ld})$", (long)integerLength, (long)integerLength, (long)decimalLength];
+    return  [NSString stringWithFormat:@"^\\d{0,%@}$|^(\\d{0,%@}[.][0-9]{0,%@})$", @(integerLength), @(integerLength), @(decimalLength)];
 }
 
 NS_INLINE NSString *_U32SubstringFromRange(NSString* string, NSRange range) {
