@@ -5,6 +5,7 @@
 更加规范和方便的使用textField
 
 Features
+
 ==============
 ```objc
 
@@ -29,8 +30,6 @@ Features
 Usage
 ==============
 
-#### UI相关
-
 ```objc
 
     /*! 以下大部分设置都支持xib @see IBInspectable */
@@ -39,6 +38,10 @@ Usage
     [QHTextField appearance].leftViewTextColor = [UIColor purpleColor];
 
     QHTextField *textField = [QHTextField new];
+    
+    
+    // ------------------- UI相关
+    
     
     // 左icon显示
     textField.leftViewIcon = [UIImage imageNamed:@"icon_left_test"];
@@ -68,6 +71,11 @@ Usage
     
     // 无左右view设置文字内间距50
     textField.textLeftNormalInset = 50.f;
+    textField.textRightNormalInset = 50.f;
+    
+    
+    // ------------------- 匹配相关
+    
     textField.textRightNormalInset = 50.f;
     
     // 设置匹配类型为 1:Number
