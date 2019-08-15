@@ -1,5 +1,5 @@
 # QHTextField
-==============
+
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/ibireme/YYText/master/LICENSE)
 
 更加规范和方便的使用textField
@@ -26,6 +26,29 @@ Features
  ********************************************************************************/
 
 ```
+
+#### Podfile
+
+To integrate QHTextField into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+target 'TargetName' do
+pod 'QHTextField', '~> 0.1.1'
+end
+```
+
+
+### Installation with Carthage
+To integrate QHTextField into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "QHTextField/QHTextField" ~> 0.1.1
+```
+
+
 
 Usage
 ==============
