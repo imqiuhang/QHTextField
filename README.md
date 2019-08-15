@@ -26,6 +26,9 @@ Features
 
 ```
 
+![demo](https://github.com/imqiuhang/QHTextField/blob/master/Screenshots/demo.gif)
+
+
 #### Podfile
 
 To integrate QHTextField into your Xcode project using CocoaPods, specify it in your `Podfile`:
