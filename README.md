@@ -1,11 +1,11 @@
 # QHTextField
-==============
+
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/ibireme/YYText/master/LICENSE)
 
 更加规范和方便的使用textField
 
 Features
-==============
+
 ```objc
 
 /*!********************************************************************************
@@ -26,10 +26,31 @@ Features
 
 ```
 
+#### Podfile
+
+To integrate QHTextField into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+target 'TargetName' do
+pod 'QHTextField', '~> 0.1.1'
+end
+```
+
+
+### Installation with Carthage
+To integrate QHTextField into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "QHTextField/QHTextField" ~> 0.1.1
+```
+
+
+
 Usage
 ==============
-
-#### UI相关
 
 ```objc
 
@@ -39,6 +60,10 @@ Usage
     [QHTextField appearance].leftViewTextColor = [UIColor purpleColor];
 
     QHTextField *textField = [QHTextField new];
+    
+    
+    // ------------------- UI相关
+    
     
     // 左icon显示
     textField.leftViewIcon = [UIImage imageNamed:@"icon_left_test"];
@@ -68,6 +93,11 @@ Usage
     
     // 无左右view设置文字内间距50
     textField.textLeftNormalInset = 50.f;
+    textField.textRightNormalInset = 50.f;
+    
+    
+    // ------------------- 匹配相关
+    
     textField.textRightNormalInset = 50.f;
     
     // 设置匹配类型为 1:Number
