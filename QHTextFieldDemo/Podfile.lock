@@ -2,30 +2,27 @@ PODS:
   - IQKeyboardManager (6.4.0)
   - MBProgressHUD (1.1.0)
   - PureLayout (3.1.4)
-  - QHTextField (0.1.0):
+  - QHTextField (0.1.1):
     - PureLayout
 
 DEPENDENCIES:
   - IQKeyboardManager
   - MBProgressHUD
-  - QHTextField (from `../QHTextField.podspec`)
+  - QHTextField
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - IQKeyboardManager
     - MBProgressHUD
     - PureLayout
-
-EXTERNAL SOURCES:
-  QHTextField:
-    :path: "../QHTextField.podspec"
+    - QHTextField
 
 SPEC CHECKSUMS:
   IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
-  QHTextField: f8f3487895cc6aa547bda31113c49aaad86da10b
+  QHTextField: 9541a599e21dc803add37156184f8d0ef0f1604f
 
-PODFILE CHECKSUM: f8de9e78ae3bdc00df1a026ca8af7b17b7497fdb
+PODFILE CHECKSUM: cb8e27e0605648a3d84859995ce82dc019a0b76d
 
 COCOAPODS: 1.6.1

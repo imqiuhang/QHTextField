@@ -4,7 +4,9 @@ platform :ios, '8.0'
 
 target 'QHTextFieldDemo' do
 
-  pod 'QHTextField', :path => '../QHTextField.podspec'
+  pod 'QHTextField'
+
+
   pod 'IQKeyboardManager'
   pod 'MBProgressHUD'
 
